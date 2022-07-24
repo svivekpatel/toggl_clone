@@ -106,6 +106,7 @@
             padding: 15px;
             background: transparent;
             border: 1px solid gray;
+            color: white;
         }
         #loginform form>input:last-child{
             background-color: #E57CD8;
@@ -184,6 +185,11 @@
             font-weight: bold;
             background-color: #E57CD8;
             border: none;
+        }
+        #lastbtn>button>a{   
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
         }
         #lastbtn>button:hover{
             cursor: pointer;
@@ -355,9 +361,9 @@
             </div>
             <form>
                 <label for="">Email</label>
-                <input type="text" placeholder="Email">
+                <input id="mail" type="text" placeholder="Email">
                 <label for="">Password</label>
-                <input type="text" placeholder="Password">
+                <input id="pass" type="text" placeholder="Password">
                 <input type="submit" value="Login">
             </form>           
                 <a href="">Forgot password?</a>
@@ -368,7 +374,7 @@
         </div>
         <p>Don't have an account?</p>
         <div id="lastbtn">
-            <button>Sign up for free</button>
+            <button><a href="signup.html">Sign up for free</a></button>
         </div>
     </div>
 
@@ -457,3 +463,25 @@
     
 </body>
 </html>
+
+<script>
+    var finalData = JSON.parse(localStorage.getItem("data"))
+
+    document.querySelector("form")
+    .addEventListener("submit",myFunction)
+    function myFunction(){
+        event.preventDefault()
+        var loginData = {
+            mail:document.querySelector("#mail").value,
+            pass:document.querySelector("#pass").value
+        }
+       console.log(finalData)
+       console.log(loginData)
+       if(finalData.mail == loginData.mail  &&  finalData.pass == loginData.pass){
+        alert("login successful")
+       }
+       else{
+        alert("enter correct details")
+       }
+    }
+</script>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #main{
+            background-color: #412A4C;
+            padding: 50px;
+        }
+        *{
+            font-family: sans-serif;
+        } 
+        #imag>img{
+            width: 150px;
+        }
+          #signinform{
+            background-color: #2C1338;
+            padding: 30px;
+            width: 48%;
+            margin-right: 80px;
+        }
+        #signinform div>div{
+            display: flex;
+        }
+        #signinform form{
+            display: grid;
+            color: rgb(229, 226, 226);
+            padding-top: 20px;
+        }
+        #signinform form>label{
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #FCE5D8;
+        }
+        #signinform form>input{
+            margin-bottom: 23px;
+            padding: 15px;
+            background: transparent;
+            border: 1px solid gray;
+            color: white;
+        }
+        #signinform form>input:last-child{
+            background-color: #E57CD8;
+            border-radius: 40px;
+            margin-top: 20px;
+            border: none;
+            color: white;
+            font-weight: bold;
+
+        }
+        #signinform form>input:last-child:hover{
+           cursor: pointer;
+           background-color: #564260;
+
+        }
+        #signinform img{
+            width: 25px;
+            height: 25px;
+            margin-right: 5px;
+        }
+        #signbtn{
+            display: flex;
+            justify-content: space-between;
+            /* margin-top: 30px; */
+        }
+        #signbtn>div{
+            padding: 12px 30px;
+            background-color: white;
+            border-radius: 40px;
+            
+        }
+        #signbtn>div>button{
+           border: none;
+           font-weight: bold;
+           font-size: 14px;
+           background-color: transparent;
+        }
+        #or{
+            display: flex;
+            color: #FCE5D8;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        #or>hr{
+            width: 40%;
+            height: 0px;
+            border: 1px solid gray;
+        }
+        #signinform>p{
+            font-size: 13px;
+            color: #FCE5D8;
+        }
+        #signinform>p>a{
+            color: #E57CD8;
+        }
+        #detail{
+            color: #FFF3ED;
+        }
+        #detail>h1{
+            font-size: 53px;
+            color: #FFF3ED;
+        }
+        #detail>p{
+            font-size: 18px;
+            line-height: 10px;
+            color: #FCE5D8;
+        }
+        #detail>p>a{
+           color: #E57CD8;
+        }
+        #detail>p:last-child{
+            margin-top: 30px;
+        }
+
+
+        #main-2{
+            width: 80%;
+            margin: auto;
+            margin-top: 20px;
+        }
+        #signn{
+            display: flex;
+            color: #d8d8d8;
+        }
+        #signn>div:last-child{
+            width: 40%;
+            margin: 60px 0px;
+        }
+        #signn>div:last-child>h1{
+            font-size: 50px;
+            line-height: 0px;
+        }
+        #signn>div:last-child>p{
+            font-size: 19px;
+            font-weight: bold;
+        }
+        #signn>div:last-child>p+p+p{
+            font-size: 15px; 
+            font-weight: lighter;
+        }
+        #signn>div:last-child>img{
+            width: 100%;
+            margin-top: 40px;
+        }
+        #signn>div:last-child>p>i{
+            color: #F3DE91;
+        }
+        #last{
+            display: flex;
+            background-color: #E57CD8;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 30px;
+            font-size: 13px;
+        }
+        #last a{
+            color: #412A4C;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="imag">
+            <img src="https://toggl.com/blog/wp-content/uploads/2020/09/toggl-track_logotype_horizontal_pink_rgb-e1599116263835.png" alt="">
+        </div>
+        <div id="main-2">
+            <div id="detail">
+                <h1>Sign up for a <i>free</i> Toggl Track account</h1>
+                <p>All plans come with a free, 30-day trial of Toggl Track Premium—no credit card required.</p>
+                <p>Upgrade at the end of the trial or continue using Track for free forever.</p>
+                <p>Already have an account? <a href="login.html">Log in here</a>.</p>
+            </div>
+            <div id="signn">
+                <div id="signinform">
+                    <div id="signbtn">
+                        <div>
+                            <img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png" alt="">
+                             <button>Sign up via Google</button>
+                        </div>
+                        <div>
+                            <img src="https://www.freepnglogos.com/uploads/apple-logo-png/file-apple-logo-black-svg-wikimedia-commons-1.png" alt="">
+                             <button>Sign up via Apple</button>
+                        </div>
+                    </div>
+                    <div id="or">
+                        <hr>
+                        <p>OR</p>
+                        <hr>
+                    </div>
+                    <form>
+                        <label for="">Email</label>
+                        <input id="email" type="text" placeholder="Email">
+                        <label for="">Password</label>
+                        <input id="password" type="text" placeholder="Password">
+                        <input type="submit" value="Sign up via email">
+                    </form> 
+                    <p>By signing up, you agree to our <a href=""> terms of service</a>, <a href="">privacy policy</a>  and to receiving marketing communication from Toggl Track. You can opt out anytime.</p>          
+                </div>
+                <div>
+                    <h1>"</h1>
+                    <p>Toggl Track has a very straightforward interface. It's easy to start, stop and edit time entries and to review your own work and the work of colleagues.</p>
+                    <p><i> It just works</i>, even in a team where some members find new interfaces challenging..</p>
+                    <p>— Verified G2Crowd review. 5/5 stars.</p>
+                    <img src="https://public-assets.toggl.com/b/static/6b5c09dd5baafcca069103cd517b38c9/67548/review-badges.avif" alt="">
+                </div>
+            </div>
+        </div>  
+    </div>
+    <div id="last">
+        <div>
+            <p>© 2022 Toggl. All rights reserved.</p>
+        </div>
+        <div><a href="">Legal terms</a></div>
+    </div>
+</body>
+</html>
+
+<script>
+    document.querySelector("form")
+    .addEventListener("submit", signupfunction)
+    var dataObj = JSON.parse(localStorage.getItem("data")) || []
+    function signupfunction(){
+        event.preventDefault();
+        var dataObj = {
+            mail:document.querySelector("#email").value,
+            pass:document.querySelector("#password").value
+        }
+        
+        localStorage.setItem("data",JSON.stringify(dataObj))
+        alert("Sign up successful")
+    }
+</script>
